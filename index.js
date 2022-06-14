@@ -7,7 +7,7 @@ var Type = require("./Type")
 var Cookie = require("./Cookie")
 var HttpError = require("./HttpError")
 
-var home = require("fs").readFileSync("index.html", "utf-8")
+var home = require("fs").readFileSync("./index.html", "utf-8")
 var data = require("./data.json")
 
 http.createServer(function route(req, res) {
