@@ -4,7 +4,8 @@
   "description": "A starting point for big dreams.",
   "main": "index.js",
   "scripts": {
-    "start": "node index"
+    "start": "node index.js",
+    "build": "node index.js",
   },
   "keywords": [
     "REST",
