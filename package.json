@@ -6,7 +6,13 @@
   "scripts": {
     "start": "node index"
   },
-  "keywords": ["REST", "API"],
+  "keywords": [
+    "REST",
+    "API"
+  ],
   "author": "Leo Horie",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@vercel/node": "^2.1.0"
+  }
 }
