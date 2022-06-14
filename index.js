@@ -7,7 +7,6 @@ var Type = require("./Type")
 var Cookie = require("./Cookie")
 var HttpError = require("./HttpError")
 
-var home = require("fs").readFileSync("./index.html", "utf-8")
 var data = require("./data.json")
 
 http.createServer(function route(req, res) {
@@ -18,7 +17,7 @@ http.createServer(function route(req, res) {
 		if (args == null) {
 			if (u.pathname === "/") {
 				res.writeHead(200)
-				res.end(home)
+				res.end('hello')
 				return
 			}
 			else throw new HttpError(404, "Not found")
