@@ -133,7 +133,7 @@ function stageData(db) {
 	for (var k in db) {
 		var typed = Type.encode(db[k])
 		var csv = CSV.create(typed)
-		cookies.push(k + "=" + encodeURIComponent(csv) + "; Path=/; SameSite=None;")
+		cookies.push(k + "=" + encodeURIComponent(csv) + "; Path=/; SameSite=None; Secure")
 	}
 	return cookies
 }
